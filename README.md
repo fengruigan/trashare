@@ -1,0 +1,2 @@
+# trashare
+Trash sharing platform 
