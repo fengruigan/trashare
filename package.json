@@ -2,8 +2,11 @@
   "name": "trashare",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
+    "prettier": "prettier -c ./",
     "lint": "eslint --ext .js ./",
+    "checkstyle": "npm run lint && npm run prettier",
     "start": "node ./bin/www"
   },
   "dependencies": {
