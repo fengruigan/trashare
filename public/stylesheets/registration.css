@@ -6,15 +6,15 @@ h1 {
   text-align: center;
 }
 
+.container {
+  margin-top: 10%;
+  border-radius: 4px;
+  padding: 14px 18px;
+}
+
 #input-div {
   margin: 0 auto;
   width: 50%;
-}
-
-.container {
-  margin-top: 18%;
-  border-radius: 4px;
-  padding: 14px 18px;
 }
 
 /* Extra small devices (phones, 600px and down) */
