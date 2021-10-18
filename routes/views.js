@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 
 // Get login page
 router.get("/login", (req, res) => {
-  res.send("Login page");
+  res.sendFile(path.join(__dirname, "../public/login.html"));
 });
 
 // Get registration page
