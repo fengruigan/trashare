@@ -1,0 +1,13 @@
+.post-description {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 240px;
+  resize: vertical;
+  min-height: 240px;
+}
+
+.container {
+  margin-top: 10%;
+  border-radius: 4px;
+  padding: 14px 18px;
+}
