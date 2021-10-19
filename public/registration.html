@@ -62,6 +62,7 @@
               <div>
                 <label>First Name</label>
                 <input
+                  class="form-control"
                   type="text"
                   maxlength="50"
                   name="firstName"
@@ -71,19 +72,32 @@
               </div>
               <div>
                 <label>Last Name</label>
-                <input type="text" maxlength="50" name="lastName" required />
+                <input
+                  class="form-control"
+                  type="text"
+                  maxlength="50"
+                  name="lastName"
+                  required
+                />
               </div>
             </div>
             <div class="row">
               <div>
                 <label>Email</label>
-                <input type="email" maxlength="64" name="email" required />
+                <input
+                  class="form-control"
+                  type="email"
+                  maxlength="64"
+                  name="email"
+                  required
+                />
               </div>
             </div>
             <div class="row">
               <div>
                 <label>Password</label>
                 <input
+                  class="form-control"
                   id="password-input"
                   type="password"
                   maxlength="64"
@@ -92,7 +106,12 @@
                 />
               </div>
               <div>
-                <input id="password-toggler" type="checkbox" /> Show Password
+                <input
+                  class="form-check-input"
+                  id="password-toggler"
+                  type="checkbox"
+                />
+                <label for="password-toggler">Show Password</label>
               </div>
             </div>
             <div class="row mt-2">
