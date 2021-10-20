@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trashare Registration</title>
+    <title>Trashare Login</title>
     <!-- Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
@@ -55,49 +55,19 @@
 
     <main>
       <div class="container border position-relative">
-        <h1>Create account</h1>
+        <h1>Login</h1>
         <div id="input-div">
-          <form action="/api/users" method="POST" autocomplete="on">
-            <div class="row">
-              <div>
-                <label>First Name</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="50"
-                  name="firstName"
-                  tabindex="0"
-                  required
-                />
-              </div>
-              <div>
-                <label>Last Name</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="50"
-                  name="lastName"
-                  required
-                />
-              </div>
-            </div>
+          <form action="/api/users/login" method="POST" autocomplete="on">
             <div class="row">
               <div>
                 <label>Email</label>
-                <input
-                  class="form-control"
-                  type="email"
-                  maxlength="64"
-                  name="email"
-                  required
-                />
+                <input type="email" maxlength="64" name="email" required />
               </div>
             </div>
             <div class="row">
               <div>
                 <label>Password</label>
                 <input
-                  class="form-control"
                   id="password-input"
                   type="password"
                   maxlength="64"
@@ -106,12 +76,7 @@
                 />
               </div>
               <div>
-                <input
-                  class="form-check-input"
-                  id="password-toggler"
-                  type="checkbox"
-                />
-                <label for="password-toggler">Show Password</label>
+                <input id="password-toggler" type="checkbox" /> Show Password
               </div>
             </div>
             <div class="row mt-2">
@@ -120,7 +85,7 @@
                 class="btn btn-primary btn-md mt-2"
                 id="create-button"
               >
-                Create Trashare Account
+                Login
               </button>
             </div>
           </form>
